@@ -252,7 +252,7 @@ Refa-App/
 
 ## Developed By
 
-**M. Rehan Sharif \& Faisal Tehseen**
+**M. Rehan Sharif \& Faisal Tehseen Mehdi**
 BS Computer Science — Semester 6th
 Department of Computer Science
 University of Layyah
