@@ -42,8 +42,8 @@ class MapRepositoryImpl @Inject constructor(
     @param:ApplicationContext private val context: Context
 ) : MapRepository {
 
-    private val API_KEY = "AIzaSyBh37-ALx_Di5G16a0ha0jSSMpVEHRvreE"
-
+    private val API_KEY = "YOUR_MAPS_API_KEY_HERE"
+    
     override fun getNearbyDrivers(location: com.example.transportapp.domain.model.LatLng): Flow<List<com.example.transportapp.domain.model.Driver>> = callbackFlow {
         val driversRef = db.getReference("drivers")
         val listener = object : ValueEventListener {
