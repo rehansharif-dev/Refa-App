@@ -120,27 +120,30 @@ The following permissions are declared in `AndroidManifest.xml` and are required
 
 ---
 
-## APK Download
+## 📥 Download & Install
 
-> Download and install the Refa app directly on your Android phone.
+### Download from GitHub Releases
 
-📥 [**Download Refa.apk**](apk/Refa.apk)
+1. Go to the **[Releases](../../releases/latest)** page.
 
-\---
+2. Download the latest **`Refa.apk`** file.
 
-## How to Install the APK
+3. Transfer the APK to your Android device (USB, WhatsApp, Google Drive, etc.).
 
-1. **Download** the `Refa.apk` file from the `apk/` folder above
-2. **Transfer** the file to your Android phone (via USB, WhatsApp, Google Drive, etc.)
-3. **Open** the APK file on your Android phone
-4. If prompted, tap **"Allow from this source"** or go to:
-`Settings → Security → Install Unknown Apps → Enable`
-5. Tap **Install** and wait a few seconds
-6. Open **Refa** from your app drawer and register your account
+4. Open the APK file on your phone.
 
-> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*Minimum Android version:\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* Android 8.0 (Oreo) or higher
+5. If prompted, enable installation from unknown sources:
 
-\---
+   ```
+   Settings → Security → Install Unknown Apps → Allow from this source
+   ```
+
+6. Tap **Install** and wait for the installation to complete.
+
+7. Open **Refa** from your app drawer and create your account.
+
+> **Minimum Android Version:** Android 8.0 (Oreo) or higher
+
 
 ## How to Run the Project (Developers)
 
@@ -214,27 +217,27 @@ All data is stored securely on Firebase and is never sold to third parties.
 
 \---
 
-## Project Structure
+## 📂 Project Structure
 
-```
+```text
 Refa-App/
-├── app/                          ← Complete Android source code
+
+├── app/                          # Complete Android source code
 │   └── src/main/java/
 │       └── com/example/transportapp/
-│           ├── data/             ← Repositories, Firebase services
-│           ├── domain/           ← Models, Repository interfaces
-│           ├── presentation/     ← Screens \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\& ViewModels (Compose)
-│           ├── di/               ← Hilt dependency injection modules
-│           └── ui/               ← Theme, Colors, Typography
-├── screenshots/                  ← App screenshots (9 screens)
-├── apk/                          ← Installable APK file
-├── docs/                         ← Privacy Policy \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\& User Manual
-├── README.md                     ← This file
-├── LICENSE                       ← MIT License
-└── .gitignore                    ← Android gitignore
+│           ├── data/             # Repositories, Firebase services
+│           ├── domain/           # Models, Repository interfaces
+│           ├── presentation/     # Screens & ViewModels (Jetpack Compose)
+│           ├── di/               # Hilt dependency injection modules
+│           └── ui/               # Theme, Colors, Typography
+├── screenshots/                  # App screenshots
+├── apk/                          # Installable APK file
+├── docs/                         # Privacy Policy & User Manual
+├── README.md                     # Project documentation
+├── LICENSE                       # MIT License
+└── .gitignore                    # Android Git ignore rules
 ```
 
-\---
 
 ## Future Enhancements
 
