@@ -103,22 +103,22 @@ The app solves a real problem: affordable, trackable, cashless transportation in
 
 The following permissions are declared in `AndroidManifest.xml` and are required for the app to function correctly:
 
-|Permission|Purpose|
-|-|-|
-|`INTERNET`|Required for all network requests — Firebase, Google Maps, Directions API|
-|`ACCESS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_FINE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_LOCATION`|Precise GPS location for ride pickup and driver tracking|
-|`ACCESS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_COARSE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_LOCATION`|Fallback network-based location when GPS is unavailable|
-|`ACCESS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_BACKGROUND\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_LOCATION`|Keeps driver location updated while app is in the background|
-|`FOREGROUND\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SERVICE`|Required to run the GPS location service in the foreground|
-|`FOREGROUND\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SERVICE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_LOCATION`|Declares that the foreground service uses location (Android 14+)|
-|`VIBRATE`|Vibrates the phone when a new ride request arrives (driver mode)|
-|`READ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_MEDIA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_IMAGES`|Allows selecting a profile picture from the gallery (Android 13+)|
-|`READ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_EXTERNAL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_STORAGE`|Allows selecting a profile picture on Android 12 and below|
-|`POST\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_NOTIFICATIONS`|Required to show push notification banners on Android 13+|
+| Permission | Purpose |
+|------------|---------|
+| `INTERNET` | Required for all network requests — Firebase, Google Maps, Directions API |
+| `ACCESS_FINE_LOCATION` | Precise GPS location for ride pickup and driver tracking |
+| `ACCESS_COARSE_LOCATION` | Fallback network-based location when GPS is unavailable |
+| `ACCESS_BACKGROUND_LOCATION` | Keeps driver location updated while the app is in the background |
+| `FOREGROUND_SERVICE` | Required to run the GPS location service in the foreground |
+| `FOREGROUND_SERVICE_LOCATION` | Declares that the foreground service uses location (Android 14+) |
+| `VIBRATE` | Vibrates the phone when a new ride request arrives (Driver Mode) |
+| `READ_MEDIA_IMAGES` | Allows selecting a profile picture from the gallery (Android 13+) |
+| `READ_EXTERNAL_STORAGE` | Allows selecting a profile picture on Android 12 and below |
+| `POST_NOTIFICATIONS` | Required to show push notification banners on Android 13+ |
 
-> No user data is collected beyond what is necessary for ride-booking functionality. See \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[Privacy Policy](docs/Privacy%20Policy.pdf) for full details.
+> No user data is collected beyond what is necessary for ride-booking functionality. See [Privacy Policy](docs/Privacy%20Policy.pdf) for full details.
 
-\---
+---
 
 ## APK Download
 
